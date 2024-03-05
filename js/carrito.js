@@ -1,0 +1,1 @@
+const cartBox = document.getElementById( "cart-box")
