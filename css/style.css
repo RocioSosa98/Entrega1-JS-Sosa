@@ -2,19 +2,208 @@
   margin: 0;
   padding: 0;
 }
-  .container{
-    background-color: #8EC5FC;
-    align-self: center;
+header {
+  display: flex;
+  border-bottom: 5px solid #a73657;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, #FF80E6, #B721FF);
+}
+header img {
+  width: 10rem;
+}
+
+header .button-01 {
+  display: block;
+  text-decoration: none;
+  margin-left:72em;
+  margin-top: 2rem;
+  width: 7rem;
+  border-radius: 2rem;
+  text-align: center;
+  background-image: linear-gradient(to right, #ffccd5, #fff0f3);
+}
+
+.cart-counter{
+  color: purple;
+  position: absolute;
+}
+body{
+  background-color: #e4fff9;
+}
+
+body div.anuncio {
+  text-align: center;
+  font-size: 1rem;
+  padding: 1rem;
+  background-color: #fefae0;
+}
+body div.anuncio span {
+  font-weight: bold;
+}
+.parrafo-anuncio{
+  color:black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+   /*ESTILOS DE PRODUCTOS*/
+  .products-container{
+    display: flex;
+    justify-content: space-around;
     color: #343a40;
-    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+
   }
-  img {
+  .container{
+      width: 14rem;
+      background-color :#451952;
+      border-radius: 2rem;
+      align-self: center;
+      margin: 1rem;
+      color: #343a40;
+      text-align: center;
+      padding: 1rem;
+    
+  }
+  .container img {
     width: 14rem;
   } 
+.price{
+  color: black;
+  font-size: 22px;
+}
+.container button{
+  padding: 12px;
+  background-color: pink;
+  color: black;
+  width: 10rem;
+  font-family: Arial;
+  transition: 1s;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 2rem;
+  text-align: center;
+  display: block;
+  margin-left: 3rem;
+}
+  
   p{
-    font-family: "Advertencia", cursiva;
+    font-family: "PT Serif", serif;
     font-size: medium;
     font-style: oblique;
     text-align: center;
+    color:#EADBC8;
+  }
+
+
+  .no-results{
+    display: none;
+  }
+  .ver-carrito{
+    font-size: 30px;
+    margin-right: 20px;
+    margin-top: 3px;
+    cursor: pointer;
+  }
+
+/*PRODUCTOS DENTRO DEL CARRITO*/
+.list-cart{
+  width: 80%;
+  margin: 0 10%;
+  color:white;
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  overflow: auto;
+  top: 12vh;
+  z-index: 9;
+}
+.list-cart > .productos-carrito{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  margin: 10px;
+}
+.list-cart > div > img{
+  height: 120px;
+  width: 120px;
+}
+  .list-cart-header{
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+  }
+  .cart-header-title{
+    justify-self: center;
+  }
+  .list-cart-button{
+    cursor: pointer;
+  }
+  .totalapagar{
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+    
+  } 
+  /*BOTON VACIAR CARRITO*/
+  .Vaciar-carrito{
+    background-color: #D8B4F8;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    border-radius: 2rem;
+  }
+
+  footer {
+    background-image: linear-gradient(to right, #FF80E6, #B721FF);
     color: black;
+    margin-top: 2rem;
+    align-items: center;
+    border-top: 1px solid gray;
+  }
+  footer .container-footer {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+  }
+  footer .container-footer .column-01 {
+    max-width: 30rem;
+  }
+  footer .container-footer .column-01 h2 {
+    font-size: 2.2rem;
+    color: color-renna;
+    font-family: "Nanum Myeongjo", serif;
+  }
+  footer .container-footer .column-01 p {
+    font-size: 1rem;
+    color: color-renna;
+    margin-top: 1rem;
+    font-family: "PT Serif", serif;
+  }
+  footer .container-footer .column-02 {
+    margin-left: 4rem;
+  }
+  footer .container-footer .column-02 h3 {
+    color: black;
+    font-size: 2rem;
+    font-family: "Nanum Myeongjo", serif;
+  }
+  footer .container-footer .column-02 .filas {
+    color: color-renna;
+    margin-top: 2rem;
+    display: flex;
+    font-family: "Nanum Myeongjo", serif;
+  }
+  footer .container-footer .column-02 .filas img {
+    width: 4rem;
   }
